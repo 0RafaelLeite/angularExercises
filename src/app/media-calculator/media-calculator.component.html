@@ -1,0 +1,15 @@
+<div>
+    <h2>Calcular Média</h2>
+    <form>
+      <input type="number" [(ngModel)]="ac1" name="ac1" placeholder="AC1" required>
+      <input type="number" [(ngModel)]="ac2" name="ac2" placeholder="AC2" required>
+      <input type="number" [(ngModel)]="ag" name="ag" placeholder="AG" required>
+      <input type="number" [(ngModel)]="af" name="af" placeholder="AF" required>
+  
+      <button type="button" (click)="calcularMedia()">Calcular</button>
+    </form>
+  
+    <p *ngIf="media !== undefined">Média Final: {{ media | number:'1.2-2' }}</p>
+    <p *ngIf="media !== undefined">{{ resultado }}</p>
+  </div>
+  
